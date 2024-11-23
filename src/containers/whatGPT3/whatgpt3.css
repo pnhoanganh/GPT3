@@ -117,9 +117,6 @@
     font-size: 28px;
     line-height: 40px;
   }
-  .section__magrin {
-    margin: 2rem 4rem;
-  }
 }
 
 @media screen and (max-width: 450px) {
