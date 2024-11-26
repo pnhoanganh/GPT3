@@ -13,11 +13,6 @@ body {
   background: #040c18;
 }
 
-a {
-  color: unset;
-  text-decoration: none;
-}
-
 /* Tool: angry tools */
 .gradient__bg {
   /* ff 3.6+ */
