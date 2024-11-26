@@ -75,7 +75,7 @@
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
-  background: var(--color-footer);
+  background: rgba(3, 27, 52, 1);
   padding: 1.5rem;
   position: absolute;
   top: 40px;
@@ -127,5 +127,9 @@
 
   .gpt3__nav-menu_container-links-sign {
     display: block;
+  }
+  .gpt3__nav-sign button,
+  .gpt3__nav-menu_container-links-sign button {
+    padding: 0.5rem 1rem;
   }
 }
