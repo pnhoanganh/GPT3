@@ -1,11 +1,25 @@
-import React from "react";
 import Feature from "../../components/feature/Feature";
 import "./whatgpt3.css";
+
+const featureData = [
+  {
+    title: "Chatbots",
+    text: "We so opinion friends me message as delight. Whole front do of plate heard oh ought. ",
+  },
+  {
+    title: "Knowledgebase",
+    text: "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b",
+  },
+  {
+    title: "Education",
+    text: "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b",
+  },
+];
 
 const WhatGPT3 = () => {
   return (
     <>
-      <div className="gpt3__wgpt3 section__magrin" id="#wgpt3">
+      <div className="gpt3__wgpt3 section__magrin" id="wgpt3">
         <div className="gpt3__wgpt3-feature">
           <Feature
             title="What is GPT-3"
@@ -19,18 +33,13 @@ const WhatGPT3 = () => {
           <p>Explore The Library</p>
         </div>
         <div className="gpt3__wgpt3-container">
-          <Feature
-            title="Chatbots"
-            text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. "
-          />
-          <Feature
-            title="Knowledgebase"
-            text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
-          />
-          <Feature
-            title="Education"
-            text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
-          />
+          {featureData.map((item, index) => (
+            <Feature
+              title={item.title}
+              text={item.text}
+              key={item.title + index}
+            />
+          ))}
         </div>
       </div>
     </>

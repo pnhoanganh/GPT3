@@ -1,0 +1,102 @@
+.gpt3__features {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gpt3__features .gpt3__features-heading {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 5rem;
+}
+
+.gpt3__features-heading h1 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 45px;
+}
+.gpt3__features-heading p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(255, 138, 113, 1);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.gpt3__features-container {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gpt3__features-container .gpt3__features-container__feture {
+  margin-bottom: 2rem;
+}
+
+.gpt3__features-container .gpt3__features-container__feture-title h1 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  margin-right: 0;
+}
+
+.gpt3__features-container .gpt3__features-container__feture-title div {
+  margin-bottom: 0.5rem;
+}
+.gpt3__features-container .gpt3__features-container__feture {
+  flex-direction: row;
+}
+
+.gpt3__features-container .gpt3__features-container__feature-text p {
+  margin-top: 0;
+}
+
+.gpt3__features-container .gpt3__features-container__feture-title {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+  .gpt3__features {
+    flex-direction: column;
+  }
+  .gpt3__features-heading {
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3__features-heading h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .gpt3__features-container .gpt3__features-container__feture {
+    flex-direction: column !important;
+  }
+  .gpt3__features-container .gpt3__features-container__feature-text p {
+    margin-top: 0.5rem !important;
+  }
+  .gpt3__features-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gpt3__features-heading h1 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .gpt3__features .gpt3__features-heading {
+    margin-right: 0;
+  }
+  .gpt3__features-heading p {
+    font-size: 15px;
+  }
+}
